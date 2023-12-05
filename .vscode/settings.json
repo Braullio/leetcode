@@ -1,0 +1,93 @@
+{
+    "files.autoSave": "afterDelay",
+
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 14,
+    "editor.indentSize": "tabSize",
+    "editor.mouseWheelZoom": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+
+    // Controls whether leading and trailing whitespace is ignored in Source Control diff gutter decorations.
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Controls whether the diff editor shows the diff side by side or inline.
+    "diffEditor.renderSideBySide": true,
+
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000"
+    },
+
+    // Controls the default view mode of the Problems view.
+    "problems.defaultViewMode": "tree",
+    // Show Errors & Warnings on files and folder.
+    "problems.decorations.enabled": true,
+
+    // When enabled, the notifications for extension recommendations will not be shown.
+    "extensions.ignoreRecommendations": false,
+
+    // JSON
+    // Enable/disable default JSON formatter
+    "json.format.enable": true,
+    // Keep all existing new lines when formatting.
+    "json.format.keepLines": false,
+    // The maximum number of outline symbols and folding regions computed (limited for performance reasons).
+    "json.maxItemsComputed": 5000,
+    // When enabled, JSON schemas can be fetched from http and https locations.
+    "json.schemaDownload.enable": true,
+    // Enable/disable JSON validation.
+    "json.validate.enable": true,
+    "workbench.settings.useSplitJSON": false,
+
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "advanced",
+
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+
+    "explorer.confirmDelete": true,
+
+    // Always confirm the creation of empty commits for the 'Git: Commit Empty' command.
+    "git.confirmEmptyCommits": true,
+
+    // Controls whether to ask for confirmation before force-pushing.
+    "git.confirmForcePush": true,
+
+    // Controls the commit message length threshold for showing a warning.
+    "git.inputValidationLength": 72,
+
+    // Controls the commit message subject length threshold for showing a warning. Unset it to inherit the value of `config.inputValidationLength`.
+    "git.inputValidationSubjectLength": 50,
+
+
+    // "[git-commit]": {
+    //     "editor.rulers": [2],
+    //     "workbench.editor.restoreViewState": false
+    // },
+
+    // Configure settings to be overridden for the yaml language.
+    // "[yaml]": {
+    //     "editor.insertSpaces": true,
+    //     "editor.tabSize": 1,
+    //     "editor.autoIndent": "advanced",
+    //     "diffEditor.ignoreTrimWhitespace": false
+    // },
+
+    // Controls whether an action button is shown in the Source Control view.
+    "git.showActionButton": {
+        "commit": true,
+        "publish": true,
+        "sync": true
+    }
+}

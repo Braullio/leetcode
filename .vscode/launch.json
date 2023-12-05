@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DEBUG",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "trace": "verbose",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/cmd/server/main.go",
+            "debugAdapter": "dlv-dap",
+        }
+    ]
+}

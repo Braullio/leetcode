@@ -101,7 +101,6 @@ func firstMissingPositive(nums []int) int {
 			return i
 		}
 		fmt.Print(" - ")
-
 	}
 
 	fmt.Printf(" \n\n")

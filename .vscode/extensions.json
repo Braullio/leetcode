@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "formulahendry.code-runner",
+        "cweijan.vscode-database-client2",
+        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph",
+        "golang.go",
+        "premparihar.gotestexplorer",
+        "quicktype.quicktype",
+        "zxh404.vscode-proto3",
+    ]
+}
