@@ -5,6 +5,29 @@ import (
 )
 
 // --------------------------------------------------
+// Runtime - 2954 ms (Beats 5.6% of users with Go) //
+// Memory - 8.3 MB (Beats 50.13% of users with Go) //
+// --------------------------------------------------
+func firstMissingPositive03(nums []int) int {
+	for contador := 1; contador <= len(nums); contador++ {
+		found := false
+
+		for index := 0; index < len(nums); index++ {
+			if nums[index] == contador {
+				found = true
+				break
+			}
+		}
+
+		if !found {
+			return contador
+		}
+	}
+
+	return len(nums) + 1
+}
+
+// --------------------------------------------------
 // Runtime - 43 ms (Beats 86.32% of users with Go) //
 // Memory - 8 MB (Beats 60.79% of users with Go)   //
 // --------------------------------------------------
@@ -119,6 +142,11 @@ func process(nums []int, result int) {
 }
 
 func main() {
+	process(
+		[]int{1, 4, -1, 8},
+		2,
+	)
+
 	process(
 		[]int{4, -1, 3, 2, 5, 1},
 		6,
